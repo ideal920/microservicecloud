@@ -1,0 +1,10 @@
+server:
+  port: 80
+feign:
+  hystrix:
+    enable: true
+eureka:
+  client:
+    registerWithEureka: false #是否将自己注册到Eureka服务中，本身就是所有无需注册
+    service-url: #Eureka客户端与Eureka服务端进行交互的地址
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/  #集群版

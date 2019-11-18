@@ -1,0 +1,14 @@
+server:
+  port: 7003 #服务端口
+spring:
+  application:
+    name: eureka-server3
+eureka:
+  instance:
+    hostname: eureka7003.com      #eureka服务端的实例名称
+  client:
+    registerWithEureka: false #是否将自己注册到Eureka服务中，本身就是所有无需注册
+    fetchRegistry: false #是否从Eureka中获取注册信息
+    service-url: #Eureka客户端与Eureka服务端进行交互的地址
+      #单机 defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/  #集群版
