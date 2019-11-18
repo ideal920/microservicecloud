@@ -1,0 +1,7 @@
+##ignore this file##
+*.project
+*.settings
+*.classpath
+*.project
+*test
+*target
