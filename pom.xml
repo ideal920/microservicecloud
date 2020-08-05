@@ -11,7 +11,8 @@
 	<maven.compiler.source>1.8</maven.compiler.source>
 	<maven.compiler.target>1.8</maven.compiler.target>
 	<junit.version>4.12</junit.version>
-	<log4j.version>1.2.17</log4j.version>
+	<!--因log4j存在安全漏洞，故升级至 1.2<X<=1.2.27-->
+	<log4j.version>1.2.27</log4j.version>
 	<lombok.version>1.16.18</lombok.version>
   </properties>
 
