@@ -10,7 +10,7 @@
 	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	<maven.compiler.source>1.8</maven.compiler.source>
 	<maven.compiler.target>1.8</maven.compiler.target>
-	<junit.version>4.12</junit.version>
+	<junit.version>4.13.1</junit.version>
 	<!--
 	   因log4j存在安全漏洞：
 	      Log4j 1.2中包含一个SocketServer类，该类很容易对不可信数据进行反序列化，当侦听日志数据的不可信网络流量时，与反序列化小工具结合使用时，可以利用该类远程执行任意代码。
